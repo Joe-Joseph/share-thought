@@ -3,8 +3,8 @@
 This project was built with 
 
  - [Create React App](https://github.com/facebook/create-react-app).
- - Apollo-Client
- - Semantic-ui
+ - [Apollo-Client](https://www.apollographql.com/docs/react/)
+ - [semantic-ui-react](https://react.semantic-ui.com/)
 
 ## Available Feautures
 
