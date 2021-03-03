@@ -11,10 +11,11 @@ const LikeButton = ({post: { id, likeCount, likes }, user}) => {
         if( user && likes.find(like => like.username === user.username)){
             setLiked(true)
         }else setLiked(false)
-    })
+    }, [likes, user])
 
     const [likePost] = useMutation(LIKE_POST,{
-        variables: { postId: id }
+        variables: { postId: id },
+        onError: (err) => err
     })
 
     const likeButton = user ? (
