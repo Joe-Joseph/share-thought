@@ -32,6 +32,7 @@ export const GET_SINGLE_POST = gql`
       likes {
         username
       }
+      likeCount
       commentCount
       comments {
         id
