@@ -12,6 +12,7 @@ import {
   Form,
   Image,
   Label,
+  Popup,
 } from "semantic-ui-react";
 
 import { AuthContext } from "../context/Auth";
@@ -88,9 +89,15 @@ const SinglePost = (props) => {
                   labelPosition="right"
                   onClick={() => console.log("comment on post")}
                 >
-                  <Button basic color="blue">
-                    <Icon name="comments" />
-                  </Button>
+                  <Popup
+                    content="comment on post"
+                    trigger={
+                      <Button basic color="blue">
+                        <Icon name="comments" />
+                      </Button>
+                    }
+                  />
+
                   <Label basic color="blue" pointing="left">
                     {commentCount}
                   </Label>
